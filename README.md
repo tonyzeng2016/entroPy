@@ -20,7 +20,7 @@ To install entroPy, `cd` to the entroPy folder and run the install command:
 sudo python setup.py install
 ```
 -----
-## tutorial and API:
+## tutorial and api:
 ```sh
 from entroPy  import MaxEntClassify
 
