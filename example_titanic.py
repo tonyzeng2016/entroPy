@@ -2,7 +2,7 @@
 '''
 Created on 2015-11-12
 
-@author: Administrator
+@author: zengxiaolong2015@163.com
 '''
 from __future__ import division
 from entroPy  import MaxEntClassify
