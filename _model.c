@@ -12,15 +12,7 @@ typedef struct
     maxent_data_t*      _data;
     maxent_model_t*     _model;
 } MaxEntTrainer;
-/***
-maxent:
-1.  添加数据-append
-    训练模型-train
-    保存模型-savemodel
-    注意：析构时，_data和_model中的dictionary
-2.  装载模型-loadmodel
-3.  模型预测-predict
-**/
+
 ///创建对象-对象内部全部为NULL
 ///Python:无参数
 static PyObject* MaxEntTrainer_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
@@ -36,7 +28,6 @@ static int MaxEntTrainer_clear(MaxEntTrainer *self)
 {
     if(self->_model!=NULL&&self->_data!=NULL)
     {
-        ///针对情况 添加数据-训练模型 装载模型-添加数据 添加数据-训练模型-添加数据
         if(self->_model->attrs==self->_data->attrs)
         {
             maxent_model_destroy_(self->_model);
