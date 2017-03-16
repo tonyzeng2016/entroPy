@@ -47,7 +47,7 @@ after prepared the data,to run the example:
 ```sh
 python example_titanic.py
 ```
-trained on train.csv,test on test.csv and gendermodel.csv, the final accuracy is  82.30%(features chosen arbitrarily).
+trained on train.csv,tested on test.csv and gendermodel.csv, the final accuracy was  82.30%(features chosen arbitrarily).
 
 
 
